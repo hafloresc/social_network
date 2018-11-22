@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Button_Google"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="163dp"
+        android:onClick="signIn" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:enabled="true"
+        android:onClick="loguearUsuario"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_centerVertical="true"
+        android:onClick="OpenRegister"
+        android:text="Sign up" />
+
+    <EditText
+        android:id="@+id/editText_LoginUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Usuario o Correo electronico"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_LoginContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_Google"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:onClick="OpenLogin1"
+        android:text="BUTTON FAB" />
+
+</RelativeLayout>
